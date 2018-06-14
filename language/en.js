@@ -43,43 +43,47 @@ var Translations = {
      *
      * "url" buttons will open the specified URL in a new window/tab when clicked
      */
-    "CtaButtonSettings": {
+     "CtaButtonSettings": {
         "button1": {
-            "card": "d1b4d742",
+            "card": "fd19a0fb",
             "label": "Contact",
             "icon": "contact"
         },
         "button2": {
-            "card": "d1b4d742",
-            "label": "Website",
-            "icon": "website"
-        },
-        "button3": {
-            "card": "d1b4d742",
+            "card": "cfe8c96e",
             "label": "Email",
             "icon": "email"
         },
-        "button4": {
-            "card": "d1b4d742",
+        "button3": {
+            "card": "80550116",
             "label": "Save",
             "icon": "save"
         },
-        "button5": {
-            "url": "http://example.com/",
+        "button4": {
+            "card": "cf086a7b",
             "label": "Share",
             "icon": "share"
+        },
+        "button5": {
+             "card":"7ad2f829",
+            "label": "Call",
+            "icon": "call"
         }
     },
 
     /**
-     * Settings for the promo graphic sections. By default only 2 promo areas can be defined.
+     * Settings for the promo graphic sections. Between 1 and 5 promo areas can be added to the page. 
+     * The portrait images need to be configured to the correct ratio as per the CTA buttons in the template files.
+     *
      * Each promo graphic requires the following:
      *
      * "trackingName" to define how clicks on it will be tracked within the EngageOne Video platform
      * "url" to go to when the promo is clicked
      * "desktopImage" the relative path to the promo image used on desktop breakpoints. This should be portrait.
      * "mobileImage" the relative path to the promo image used on mobile breakpoints. This should be landscape.
-     */    
+     *
+     * If the promo area is not required then remove the content from the variable - "PromoSettings": {};
+     */
     "PromoSettings": {
         "promo1": {
             "trackingName": "promo1",
@@ -95,8 +99,8 @@ var Translations = {
             "desktopImage": "./images/promo_portrait.png",
             "mobileImage": "./images/promo_landscape.png"
         }
-    },    
-    
+    },
+
     /**
      * Chapter settings used to build the timeline and StateMap, which maps video states to friendly names.
      *
@@ -108,49 +112,44 @@ var Translations = {
      */
     "ChapterSettings": [
         {
-            "label": "Welcome",
+            "label": "Introduction",
             "states": [
                 {
-                    "cardId": "b4a86715",
-                    "width": 20
+                    "cardId": "START",
+                    "width":20
                 }
             ]
         },
         {
-            "label": "Take Details",
+            "label": "Appointment",
             "states": [
                 {
-                    "cardId": "5a78a1b5",
-                    "width": 20
+                    "cardId": "490dacc5",
+                    "width": 15
+                },
+                {
+                    "cardId": "36a570a7",
+                    "width":15
                 }
             ]
         },
         {
-            "label": "Your Constituency",
+            "label": "Not Intersted",
             "states": [
                 {
-                    "cardId": "54fea00f",
-                    "width": 20
+                    "cardId": "4076e2d7",
+                    "width":20
                 }
             ]
         },
         {
-            "label": "Achievements",
+            "label": "Thanks",
             "states": [
                 {
-                    "cardId": "87c8489a",
-                    "width": 20
+                    "cardId": "End",
+                    "width":20
                 }
             ]
-        },
-        {
-            "label": "Feedback & Closing",
-            "states": [
-                {
-                    "cardId": "fbcb7aad",
-                    "width": 20
-                }
-            ]
-        },
+        }
     ]
 }
