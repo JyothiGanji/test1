@@ -1520,6 +1520,9 @@ div.promo__item.promo__item--bottom {
     height: calc(100vw * 9/16);
     margin-top: calc((100vh - (100vw * 9/16)) / 2);
 }
+.promo promo--side jsPromoContainer{
+    margin-top:75px;
+}
 
 .fullscreen .top-wrapper--no-cta .timeline__controls--center,
 .fullscreen .top-wrapper--no-promo .timeline__controls--center {
