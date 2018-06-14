@@ -131,6 +131,7 @@ sub {
     display: block;
     overflow: hidden;
     margin: 0 auto;
+    margin-top:20px;
     width: 600px;
     height:1095;
     background-image: url(https://kozepsuli.hu/wp-content/uploads/2015/04/desert-palms.jpg);
