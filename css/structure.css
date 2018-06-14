@@ -131,10 +131,12 @@ sub {
     display: block;
     overflow: hidden;
     margin: 0 auto;
-    width: 2460px;
+    width: 600px;
+    height:1095;
     background-image: url(https://kozepsuli.hu/wp-content/uploads/2015/04/desert-palms.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 .fullscreen .main,
